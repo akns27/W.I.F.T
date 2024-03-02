@@ -190,7 +190,7 @@ footer {
   font-style: oblique;
   border: 2px solid #fff;
   padding: 20px 146px;
-  transition: color 0.5s ease-in, background-color 0.5s ease-in;
+  transition: color 0.5s ease-in; background-color: 0.5s ease-in;
 }
 
 .move-to-notion-btn:hover {
