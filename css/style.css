@@ -24,6 +24,7 @@ ul {
 }
 html,
 body {
+  background: #9dd9ff;
   height: 100%;
 }
 img,
@@ -64,7 +65,7 @@ table {
 .container {
   height: auto;
   min-height: 100%;
-  padding-bottom: 183px;
+  /*padding-bottom: 183px;*/
 }
 
 .container img,
@@ -73,10 +74,11 @@ table {
 }
 
 footer {
-  /* height: 183px; */
+  top: 900px;
   position: relative;
-  top: 0px;
-  transform: translateY(-100%);
+  float: left;
+  width: 100%;
+  /* height: 183px; */
 }
 
 .name {
@@ -108,8 +110,7 @@ footer {
 }
 
 .letter {
-  /* position: fixed; */
-  width: 56px;
+  width: 100px;
   height: auto;
   transition: transform 2s ease;
   position: fixed;
@@ -158,15 +159,24 @@ footer {
 
 .introduce-page {
   background-color: #9dd9ff;
-  width: 100vw;
+  width: auto;
   height: 1080px;
   padding: 1px;
   margin: 0 auto;
 }
 
+#introduce section {
+  float: left;
+  width: 891px;
+  height: 765px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+}
+
 .left-contents {
   margin-top: 160px;
-  margin-left: 25%;
   float: left;
   color: white;
   font-family: Wanted Sans;
@@ -189,7 +199,7 @@ footer {
   font-size: 16px;
   font-style: oblique;
   border: 2px solid #fff;
-  padding: 20px 146px;
+  padding: 20px 141px;
   transition: color 0.5s ease-in; background-color: 0.5s ease-in;
 }
 
@@ -200,8 +210,7 @@ footer {
 
 .right-contents {
   margin-top: 160px;
-  margin-left: 80px;
-  float: left;
+  float: right;
 }
 
 .flex-colomn {
@@ -269,202 +278,66 @@ footer {
   margin-right: auto;
 }
 
-@media all and (min-width: 768px) and (max-width: 1170px) {
-  .header {
-    font-size: 22px;
-    padding-top: 32px;
+@media all and (max-width: 2500px) and (min-width: 1000px) {
+  #introduce section {
+    transform: translate(-50%, 0);
+    height: 400px;
   }
-
-  .name {
-    padding-left: 64px;
-  }
-
-  .move-tap {
-    padding-right: 64px;
-  }
-
-  .icon{
-    width: 32px;
-    height: 32px;
-  }
-
-  .profile-image {
-    width: 380px;
-    height: 500px;
-  }
-  
-  .move-to-notion-btn {
-    font-size: 14px;
-    padding: 18px 132px;
-  }
-
-  .left-contents {
-    margin-left: 20%;
-  }
-  .right-contents {
-    margin-left: 64px;
-  }
-  /* .left-bottom {
-    margin-top: -8px;
-  } */
-}
-
-@media all and (min-width: 767px) and (max-width: 1023px) {
-  .header {
-    font-size: 20px;
-    padding-top: 24px;
-  }
-
-  .name {
-    padding-left: 56px;
-  }
-
-  .move-tap {
-    padding-right: 56px;
-  }
-
-  .message {
-    width: 400px;
+  footer {
+    top: 900px;
+    position: relative;
+    float: left;
+    width: 100%;
+    /* height: 183px; */
   }
 
   .letter {
-    width: 52px;
-  }
-  .kor-name {
-    font-size: 36px;
-  }
-
-  .icon{
-    width: 28px;
-    height: 28px;
-  }
-
-  .profile-image {
-    width: 300px;
-    height: 420px;
-  }
-  
-  .move-to-notion-btn {
-    font-size: 12px;
-    padding: 16px 108px;
-  }
-
-  .left-contents {
-    margin-left: 16%;
-  }
-  .right-contents {
-    margin-left: 40px;
-  }
-  .left-bottom {
-    margin-top: -8px;
+    width: 70px;
   }
 }
 
-@media all and (min-width: 500px) and (max-width: 900px) {
-  .header {
-    font-size: 14px;
-    padding-top: 16px;
-  }
+@media all and (max-width: 999px) and (min-width: 10px){
+  #introduce section {
+    position: relative;
+    width: 800px;
+    height: 1400px;
+    left: 50%;
+    transform: translate(-50%, 0);
 
-  .name {
-    padding-left: 48px;
-  }
-
-  .move-tap {
-    padding-right: 48px;
-  }
-
-  .message {
-    width: 300px;
-  }
-
-  .letter {
-    width: 48px;
-  }
-  .left-contents {
-    font-size: 12px;
-  }
-  .kor-name {
-    font-size: 28px;
-  }
-
-  .icon{
-    width: 24px;
-    height: 24px;
-  }
-
-  .profile-image {
-    width: 200px;
-    height: 320px;
-  }
-  
-  .move-to-notion-btn {
-    font-size: 12px;
-    padding: 12px 60px;
-  }
-/* 맥북절반 */
-  .left-contents {
-    margin-left: 12%;
-  }
-  .right-contents {
-    margin-left: 40px;
-  }
-  .left-bottom {
-    margin-top: -32px;
-  }
-}
-
-@media all and (max-width: 499px) {
-  .header {
-    font-size: 12px;
-    padding-top: 14px;
-  }
-
-  .name {
-    padding-left: 40px;
-  }
-
-  .move-tap {
-    padding-right: 40px;
-  }
-
-  .message {
-    width: 200px;
-  }
-
-  .letter {
-    width: 44px;
   }
 
   .left-contents {
-    font-size: 8px;
-  }
-  .kor-name {
-    font-size: 20px;
-  }
-  .icon{
-    width: 20px;
-    height: 20px;
-  }
-
-  .profile-image {
-    width: 200px;
-    height: 320px;
-  }
-  
-  .move-to-notion-btn {
-    font-size: 10px;
-    padding: 8px 80px;
-  }
-
-  .left-contents {
-    margin-left: 4%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 700px;
+    margin-top: 160px;
+    float: left;
+    color: white;
+    font-family: Wanted Sans;
+    font-weight: 500;
+    font-size: 16px;
   }
 
   .right-contents {
-    margin-left: 32px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 0;
+    margin-top: 160px;
+    float: right;
   }
-  .left-bottom {
-    margin-top: -40px;
+
+  footer {
+    top: 0px;
+    position: relative;
+    float: left;
+    width: 100%;
+    /* height: 183px; */
   }
+
+  .letter {
+    width: 90px;
+  }
+
 }
