@@ -1,3 +1,13 @@
+@font-face {
+  font-family: '87MMILSANG-Oblique';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201@1.0/87MMILSANG-Oblique.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url("https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.1/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css");
+
+
 ul {
   list-style: none; /*리스트 점 생기는거 방지*/
 }
@@ -56,7 +66,8 @@ table {
   padding-top: 40px;
   width: 100%;
   height: 92px;
-  font-family: BBB0003;
+  font-family: 'Wanted Sans';
+  font-weight: 900;
   z-index: 40;
   font-size: 24px;
   min-width: auto;
@@ -195,7 +206,7 @@ footer {
 
 .move-to-notion-btn {
   color: #fff;
-  font-family: "87MM ILSANG";
+  font-family: '87MMILSANG-Oblique';
   font-size: 16px;
   font-style: oblique;
   border: 2px solid #fff;
@@ -219,7 +230,7 @@ footer {
   gap: 0;
 }
 .oblique {
-  font-family: "87MM ILSANG";
+  font-family: '87MMILSANG-Oblique';
   font-style: oblique;
 }
 
